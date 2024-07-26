@@ -1,8 +1,9 @@
 import sys
 
-n = int(sys.stdin.readline())
+read = sys.stdin.readline
 
-for i in range(n):
-    a,b = map(int,sys.stdin.readline().split())
+T = int(read())
+
+for i in range(T):
+    a,b = map(int,read().split())
     print(a+b)
-
