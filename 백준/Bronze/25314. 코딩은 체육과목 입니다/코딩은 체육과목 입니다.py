@@ -1,11 +1,10 @@
-x = int(input())
+N = int(input())
 
+byte = N//4
 
-word = "long "
+answer = str("")
 
-for i in range(1,x//4+1):
-    answer = word*i
+for i in range(byte):
+    answer += 'long '
 
-print(answer+"int")
-
-
+print(answer+'int')
