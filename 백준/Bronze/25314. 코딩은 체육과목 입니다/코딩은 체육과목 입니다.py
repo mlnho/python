@@ -1,10 +1,8 @@
 N = int(input())
 
-byte = N//4
+answer = 'int'
 
-answer = str("")
+for i in range(N // 4):
+    answer = 'long ' + answer
 
-for i in range(byte):
-    answer += 'long '
-
-print(answer+'int')
+print(answer)
