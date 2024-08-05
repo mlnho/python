@@ -14,5 +14,4 @@ for i in A:
         answer.append(i)
 
 # 출력 값
-for i in answer:
-    print(i, end=" ")
+print(*answer)
