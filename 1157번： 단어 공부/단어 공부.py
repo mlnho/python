@@ -11,37 +11,21 @@
 #  **************************************************************************  #
 
 
-# 알파벳 리스트 26개
-alphabet = ["a","b","c","d","e","f","g","h",
-            "i","j","k","l","m","n","o","p","q",
-            "r","s","t","u","v","w","x","y","z",]
+word = input().upper()  # 결과물 대문자이기에 대문자로 지정
 
-lst = [0]*26
+word_lst = list(set(word))  # set은 순서를 보장하지 않고 중복을 제거 -> list로 변환
+print("word_lst:",word_lst)
 
-# print("lst 길이:",len(lst))
+cnt = []  # 문자를 저장할 리스트
 
-word = input()
+for i in word_lst:
+    count = word.count(i)  # word 문자에 word_lst(i)가 몇개 들어가는지 체크
+    print("count:", count)
+    cnt.append(count)  # 센 결과값을 cnt에 추가
+    
+print("cnt:",cnt)
 
-word = word.lower() # 소문자 전환
-
-for i in range(len(word)):
-    for j in range(26):
-        if word[i] == alphabet[j]:
-            lst[j] += 1
-
-
-# print(lst)
-
-answer = "?"
-
-max = 0
-for i in range(len(lst)):
-    if lst[i] > max:
-        max = lst[i]
-        answer = alphabet[i]
-    elif max == lst[i]:
-        answer = "?"
-        
-
-
-print(answer.upper())
+if (cnt.count(max(cnt))) > 1: #cnt에서 최댓값 개수가 1개 초과되면 "?" 출력
+    print("?")
+else:
+    print(word_lst[(cnt.index(max(cnt)))])
