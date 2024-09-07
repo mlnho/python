@@ -30,13 +30,14 @@
 
 ## 풀이 2 : 재귀함수
 
+
 def fibo(x):
-    # base case 
+    # base case
     if x == 0:
         return "-"
-    
+
     # recursive case
-    return fibo(x-1) + (" " * (3 ** (x-1))) + fibo(x-1)
+    return fibo(x - 1) + (" " * (3 ** (x - 1))) + fibo(x - 1)
 
 
 while True:
