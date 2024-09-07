@@ -27,17 +27,37 @@
 
 
 # 재귀함수
-def fibo(n):
-    # base case
-    if n == 0:
-        return 0
-    if n == 1:
-        return 1
+# def fibo(n):
+#     # base case
+#     if n == 0:
+#         return 0
 
+#     # recursive case
+#     return fibo(n - 1) + fibo(n - 2)
+
+
+# n = int(input())
+
+# print(fibo(n))
+
+# 재귀함수 + 메모이제이션
+# 메모이제이션 : 똑같은 수를 여러번 구한다면 배열에 저장하여 재사용하는것이 좋다
+
+
+def fibo(x):
+    global arr
+    # base case
+    if arr[x] != -1:
+        return arr[x]
+    
     # recursive case
-    return fibo(n - 1) + fibo(n - 2)
+    arr[x] = fibo(x - 1) + fibo(x - 2)
+    return arr[x]
 
 
 n = int(input())
+arr = [-1] * (n + 2)
+arr[0] = 0
+arr[1] = 1
 
 print(fibo(n))
