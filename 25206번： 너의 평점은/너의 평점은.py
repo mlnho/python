@@ -24,7 +24,7 @@ score = {
 
 # 3.0 ..... -- 학점의 총합
 userScore = 0
-# A+ .....
+# A+ .....∏
 gradeScore = 0
 
 
