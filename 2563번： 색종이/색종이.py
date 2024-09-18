@@ -23,7 +23,7 @@ for i in range(int(input())): # 색종의 수
     for j in range(lef,lef+10):
         for z in range(bot,bot+10):
             if array[j][z] != 1:
-                array[j][z] += 1
+                array[j][z] = 1
                 answer += 1
 
 print(answer)
