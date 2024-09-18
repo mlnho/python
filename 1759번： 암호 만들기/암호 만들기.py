@@ -44,8 +44,10 @@ def combination(index, level):
     # recursive case
     for i in range(index, C):
         answer.append(word[i])
+        print(answer)
         combination(i + 1, level + 1)
         answer.pop()
+        print(answer)
 
 
 # C개의 문자들이 공백으로 구분되어 주어짐
