@@ -10,3 +10,9 @@ if not list:
     print("this is empty")
     
     
+# ASCII 코드
+# 대문자 - 65 , 소문자 - 97
+# 문자를 숫자로
+print("ord :",ord('a')) # 97
+# 숫자륾 문자로
+print("chr :",chr(97)) # a
