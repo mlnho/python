@@ -21,3 +21,7 @@ print("chr :",chr(97)) # a
 
 # 내림차순
 list.sort(reverse=True)
+
+# 입력받은 숫자 리스트로 전환
+A = int(input)
+print("입력받은 숫자 -> 리스트 : ", list(str(A)))
