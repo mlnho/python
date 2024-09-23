@@ -16,3 +16,8 @@ if not list:
 print("ord :",ord('a')) # 97
 # 숫자륾 문자로
 print("chr :",chr(97)) # a
+
+
+
+# 내림차순
+list.sort(reverse=True)
