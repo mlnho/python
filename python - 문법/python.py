@@ -25,3 +25,6 @@ list.sort(reverse=True)
 # 입력받은 숫자 리스트로 전환
 A = int(input)
 print("입력받은 숫자 -> 리스트 : ", list(str(A)))
+
+
+# 투포인터 문제 = BOJ 3273 참고
