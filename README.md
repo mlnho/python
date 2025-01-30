@@ -1,2 +1,2 @@
 # python
-python language study with CodingTest
+python language study for Coding Test
